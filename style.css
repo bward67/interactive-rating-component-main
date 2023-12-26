@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+
+/*Mobile: 375px
+  Desktop: 1440px*
+
+Orange: #fb7413
+White: #ffffff
+Light Grey:  #959eac
+Medium Grey: #7c8798
+Dark Blue: #252d37
+Very Dark Blue:  #121417
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  /*width: 375px;*/
+}
+
+.sectionOne img {
+  background-color: #414b58;
+  border-radius: 50%;
+  padding: 12px 14px;
+  color: #fb7413;
+}
+.main-container {
+  color: #ffffff;
+}
+
+.circles-container {
+  display: flex;
+  flex-wrap: wrap; /*so they wrap on a small screen*/
+  justify-content: space-between;
+  align-items: center;
+}
+.circle-btn {
+  width: 50px;
+  height: 50px;
+  background-color: #414b58;
+  border-radius: 50%;
+  padding: 15px;
+  color: #959eac;
+  margin: 30px 0;
+  border: none;
+  cursor: pointer;
+}
+.circle-btn:hover {
+  background-color: #fb7413;
+}
+.circle-btn:focus {
+  background-color: #7c8798;
+  color: #ffffff;
+  /*so when the user has clicked on the button
+  the background goes light grey and the number goes 
+  a brighter white*/
+}
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 30px 0 20px 0;
+  color: #ffffff;
+  opacity: 0.9;
+}
+p {
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.submit-btn {
+  background-color: #fb7413;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 100%;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: #ffffff;
+  color: #fb7413;
+}
+
+.thankyou-btn {
+  background-color: #637080;
+  background-color: #414b58;
+  color: #fb7413;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 1.05rem;
+}
+.thankyou-page,
+.main-container {
+  background-color: #252d37;
+  border-radius: 15px;
+  padding: 30px;
+  width: 375px;
+  max-width: 100%; /*to make it responsive*/
+}
+
+.thankyou-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  gap: 30px;
+}
+.thankyou-page p {
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1 {
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.hide {
+  display: none;
+} /*it is important that this comes at the bottom*/
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+  color: #ffffff;
+  opacity: 0.7;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/**
+*! MEDIA QUERY
+**/
+
+@media (min-width: 568px) {
+  .main-container {
+    max-width: 600px;
+  }
+}
